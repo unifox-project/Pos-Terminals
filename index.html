@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://apibtc.arbitas.com http://adbtc.arbitas.com https://adbtc.arbitas.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--<meta name="theme-color" content="#2196f3" />-->
+    <meta name="author" content="VIM@arbitas.com" />
+
+    <title>ProMat</title>
+
+
+    <link rel="stylesheet" href="lib/framework7-2.0.6/dist/css/framework7.min.css">
+    <!--<link rel="stylesheet" href="lib/css/framework7.material.min.css">
+    <link rel="stylesheet" href="lib/css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="lib/css/framework7.md.min.css">-->
+    <link rel="stylesheet" href="lib/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <!-- app root -->
+    <div id="app">
+        <!--<div class="statusbar-overlay"></div>
+        <div class="panel-overlay"></div>-->
+
+        <div class="panel panel-left panel-reveal">
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="/orders.html" class="item-link item-content panel-close">
+                            <div class="item-media"><i class="icon ion-clipboard"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title">Orders</div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--<li>
+                        <a href="setting.html" class="item-link item-content panel-close">
+                            <div class="item-media"><i class="icon ion-ios-gear-outline"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title">Settings</div>
+                            </div>
+                        </a>
+                    </li>-->
+                    <li>
+                        <a href="/about.html" class="item-link item-content panel-close">
+                            <div class="item-media"><i class="ion-ios-information-outline"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title">About</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="views">
+            <div class="view view-main">
+                <div class="pages">
+                    <div data-page="index" class="page navbar-fixed">
+                        <div class="navbar">
+                            <div class="content-block">
+                                <div class="navbar-inner">
+                                    <div class="left">
+                                        <a class="logo back-to-main" href="#">
+                                            <i class="ion-cube"></i>
+                                            UniFox
+                                        </a>
+                                    </div>
+                                    <div class="nav-text-header center"></div>
+                                    <div class="right">
+                                        <a href="#" class="link icon-only add-to-cart">
+                                            <i class="icon ion-plus-round"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fab fab-right-bottom btn-send-order">
+                            <a href="/sendorder.html">
+                                <i class="icon ion-android-send"></i>
+                            </a>
+                        </div>
+                        <div class="page-content page-index">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login-screen">
+            <div class="page-content login-screen-content">
+                <div class="block">
+                    <div class="login-screen-title">UniFox</div>
+                    <form id="login-form" class="login-form">
+                        <div class="list">
+                            <ul>
+                                <li class="item-content">
+                                    <div class="item-media"><i class="icon ion-ios-email-outline"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            <input type="email" name="login" placeholder="Email" value="" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                    <div class="item-media"><i class="icon ion-ios-locked-outline"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            <input type="password" name="password" placeholder="Password" value="" />
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buttons-row">
+                            <button type="submit" class="button button-big button-raised button-fill">Sing In</button>
+                        </div>
+                        <!--<div class="list-block-label">Some text with login information.</div>-->
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="loading-block">
+                <div class="loading-image">
+                    <img src="img/ajax-loader.gif" alt="" />
+                    <div class="loading-text">Please Wait</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--<script type="text/javascript" src="lib/js/lodash.js"></script>-->
+    <script type="text/javascript" src="cordova.js"></script>
+</body>
+</html>
+
+<script type="text/javascript" src="lib/framework7-2.0.6/dist/js/framework7.min.js"></script>
+
+<!--<script type="text/javascript" src="lib/js/framework7.min.js"></script>-->
+
+<script type="text/javascript" src="lib/js/function.js"></script>
+<script type="text/javascript" src="lib/js/model.object.js"></script>
+<script type="text/javascript" src="lib/js/api.object.js"></script>
+
+<script type="text/javascript" src="lib/js/require.js" data-main="app"></script>

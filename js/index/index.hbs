@@ -1,0 +1,41 @@
+<div class="block">
+    {{#if data.order.list}}
+    <div class="payment-content">
+        <div class="payment-amount">
+            {{priceFormat data.order.total}} &euro;
+        </div>
+    </div>
+
+    <div class="list">
+        <ul>
+            {{#each data.order.list}}
+            <li class="swipeout product-{{id_product}}">
+                <div class="swipeout-content item-content">
+                    <div class="item-media">
+                        {{count}}x
+                    </div>
+                    <div class="item-inner">
+                        <div class="item-title">{{product_name}}</div>
+                        <div class="item-after">{{priceFormat price}}&euro;</div>
+                    </div>
+                </div>
+                <div class="swipeout-actions-right">
+                    <a href="#" class="action1 bg-red color-red remove-from-cart" data-id="{{id}}">Remove</a>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{else}}
+    <div class="text-align-center">
+        <h2>List is empty!</h2>
+        <div class="tap-to-start add-to-cart">
+            Tap to<br/>
+            start
+        </div>
+    </div>
+    {{/if}}
+</div>
+
+
+

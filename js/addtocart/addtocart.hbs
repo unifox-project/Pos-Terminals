@@ -1,0 +1,41 @@
+<div class="block">
+    <form class="update-product">
+        <input type="hidden" value="{{data.product.id_product}}" name="id_product" />
+        <div class="list">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-input">
+                                <input class="scan-qr-result" type="text" value="{{data.product.product_code}}" name="product_code" placeholder="Product code"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-input">
+                                <input type="text" name="product_name" placeholder="Product Name" value="{{data.product.product_name}}"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-input">
+                                <input type="number" step="any" min="0" name="price" placeholder="Price" value="{{data.product.price}}"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <button type="submit" class="button button-big button-raised button-fill bg-orange mb-15">Confirm</button>
+    </form>
+</div>
+
+
+

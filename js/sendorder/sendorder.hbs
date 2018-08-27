@@ -1,0 +1,31 @@
+<div class="block">
+    {{#ifCond data.order.status '==' '1' }}
+    <div class="payment-content">
+        <div class="payment-amount">
+            {{priceFormat data.order.total}} &euro;
+        </div>
+        <div class="payment-detail">
+            <p>
+                {{cryptoFormat data.order.res.total}} <span class="text-uppercase">{{data.currency.type}}</span>
+                <br /><small>1 <span class="text-uppercase">{{data.currency.type}}</span> = {{priceFormat data.order.res.rate}}&euro;</small>
+            </p>
+        </div>
+
+        <div class="payment-QR">
+            <img src="{{data.order.res.qrcode}}" alt="" />
+        </div>
+
+        <h4>Waiting For Payment</h4>
+    </div>
+    {{/ifCond}}
+
+    {{#ifCond data.order.status '==' '2' }}
+    <div class="payment-success">
+        <h2>Payment Received</h2>
+        <p><i class="payment-icon color-green ion-ios-checkmark-outline"></i></p>
+    </div>
+    {{/ifCond}}
+</div>
+
+
+

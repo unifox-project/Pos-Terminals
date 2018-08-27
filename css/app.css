@@ -1,0 +1,314 @@
+.clearfix {
+    clear: both;
+}
+
+.m-none {
+    margin: 0 !important;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.p-none {
+    padding: 0 !important;
+}
+
+.p-lr-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.text-uppercase {
+    text-transform:uppercase;
+}
+
+
+
+.login-form .icon {
+    font-size: 24px;
+}
+
+.navbar .center {
+    width: 100%;
+}
+
+.navbar .logo {
+    margin-left: 15px;
+}
+
+.toolbar {
+    font-size: 12px;
+    height: 40px
+}
+
+.panel-left .list {
+    margin: 0;
+}
+.list .item-media {
+    min-width: 25px !important;
+}
+.list .item-media i {
+    font-size: 20px;
+}
+
+.left-panel-actions {
+    background: #55a7d3; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#55a7d3, #0459b6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#55a7d3, #0459b6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#55a7d3, #0459b6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#55a7d3, #0459b6); /* Standard syntax */
+    /*background: url('../img/BG_left.png');*/
+    /*background-size: cover;*/
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.left-panel-actions .list {
+    color: #a0a0a0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.left-panel-actions .list ul::before,
+.left-panel-actions .list ul::after {
+    background: none;
+}
+
+.left-panel-actions .list .item-link {
+    padding: 0 0 0 15px;
+    color: #a0a0a0;
+    background: #fff;
+    border-radius: 23px;
+    margin: 0 10px 8px;
+}
+
+.left-panel-actions .list .item-link .item-content {
+    padding-left: 0;
+}
+
+.left-panel-actions .list .item-link .item-inner,
+.left-panel-actions .list .item-link .item-content .item-inner::before,
+.left-panel-actions .list .item-link .item-content .item-inner::after {
+    background: none;
+}
+
+.left-panel-actions .list .item-link .item-inner::before {
+    display: block;
+    position: absolute;
+    right: 15px;
+    font-family: "Ionicons";
+    font-size: 24px;
+    color: gray;
+    content: "\f401";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.left-panel-actions .list .item-link.complete .item-inner::before {
+    color: green;
+    content: "\f375";
+    content: "\f3ff";
+    }
+
+.left-panel-actions .list .item-link.active .item-inner::before {
+    color: orange;
+    content: "\f4c0";
+}
+
+
+a.link-service {
+    padding: 10px;
+}
+
+.link-service.button {
+    height: 130px;
+}
+
+.link-service .link-service-icon {
+    font-size: 58px;
+    line-height: 1.2;
+}
+
+.link-service .link-service-name {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+
+.link-service.list-style.button {
+    height: 90px;
+}
+
+.link-service.list-style .link-service-icon,
+.link-service.list-style .link-service-img {
+    /*float: left;*/
+    padding-right: 10px;
+    border-right: 2px solid #fff;
+}
+
+.link-service.list-style .link-service-icon {
+    font-size: 46px;
+    line-height: 1.2;
+}
+
+    .link-service.list-style .link-service-icon i {
+        padding: 5px 20px;
+        border: 4px solid #fff;
+        border-radius: 60px;
+    }
+
+.link-service.list-style .link-service-img {
+    line-height: 0;
+    font-size: 0;
+}
+
+    .link-service.list-style .link-service-img img {
+        max-width: 70px;
+    }
+
+.link-service.list-style .link-service-name {
+    /*float: left;*/
+    font-size: 20px;
+    text-align: left;
+    padding: 10px 5px;
+    line-height: 1.2
+}
+
+    .link-service.list-style .link-service-name small {
+        font-size: 14px;
+    }
+
+
+.loading {
+    position: fixed;
+    display: none;
+    background-color: rgba(255,255,255,0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 99999;
+    transition: display 300ms;
+    -webkit-transition: display 300ms;
+    -moz-transition: display 300ms;
+}
+
+.loading .loading-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 0;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+}
+
+.loading .loading-block .loading-image {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    align-self: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.loading .loading-block .loading-image .loading-text {
+    color: #808080;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.step-form-submit .card {
+    margin: 0 0 15px 0;
+}
+
+
+.step-form-submit .item-media i {
+    font-size: 24px;
+}
+
+.step-form-submit .card .left {
+    float: left;
+}
+
+.step-form-submit .card .right {
+    float: right;
+}
+
+
+.form-input-container {
+    background: #55a7d3; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#55a7d3, #0459b6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#55a7d3, #0459b6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#55a7d3, #0459b6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#55a7d3, #0459b6); /* Standard syntax */
+    /*background: url('../img/BG_left.png');*/
+    /*background-size: cover;*/
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.form-input-container .list {
+    color: #a0a0a0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.form-input-container .list .item-media, .form-input-container .list .item-inner {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.form-input-container .list ul::before,
+.form-input-container .list ul::after {
+    background: none;
+}
+
+.form-input-container .list .form-input-content {
+    padding: 0 0 0 18px;
+    color: #a0a0a0;
+    background: #fff;
+    border-radius: 23px;
+    margin: 0 10px 8px;
+}
+
+.form-input-container .list .form-input-content .item-content {
+    padding-left: 0;
+}
+
+
+.payment-success, .payment-content {
+    text-align: center;
+}
+
+.payment-content .payment-amount {
+    font-size: 48px;
+}
+
+.payment-success .payment-icon {
+    font-size: 86px;
+}
+.tap-to-start {
+    font-size: 24px;
+    line-height: 1.7;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    background-color: #EFFBFF;
+    border-radius: 50%;
+    border: 1px solid #999;
+    margin: 50px auto;
+    padding: 50px;
+}

@@ -1,0 +1,22 @@
+{{#if data.order_list.[1]}}
+<div class="timeline timeline-sides">
+    {{#each data.order_list.[1] as |day daykey|}}
+    <div class="timeline-item">
+        <div class="timeline-item-date"><small>{{@key}}</small></div>
+        <div class="timeline-item-divider"></div>
+        <div class="timeline-item-content">
+            {{#each day}}
+            <div class="timeline-item-inner">
+                <div class="timeline-item-time">Order #{{id_order}} - {{time}}</div>
+                <div class="timeline-item-title">{{priceFormat total_eur}} &euro;</div>
+                <div class="timeline-item-text"><small>{{cryptoFormat total}} <span class="text-uppercase">{{../../data.currency.type}}</span></small></div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+{{else}}
+<h3>Order list empty</h3>
+{{/if}}
